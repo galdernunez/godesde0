@@ -48,6 +48,28 @@ func TablaMultiplicacion() {
 		}
 	}
 	for i := 1; i <= 10; i++ {
-		fmt.Println(numero, " * ", i, " = ", numero*i)
+		fmt.Printf("%d * %d = %d \n", numero, i, numero*i)
 	}
+}
+
+func TablaMultiplicacionStr() string {
+	var numero int
+	var err error
+	var texto string
+	for {
+		scanner := bufio.NewScanner(os.Stdin)
+		fmt.Println("Ingrese numero de la tabla : ")
+		if scanner.Scan() {
+			numero, err = strconv.Atoi(scanner.Text())
+			if err != nil {
+				continue
+			} else {
+				break
+			}
+		}
+	}
+	for i := 1; i <= 10; i++ {
+		texto += fmt.Sprintf("%d * %d = %d \n", numero, i, numero*i)
+	}
+	return texto
 }
