@@ -1,7 +1,7 @@
 package main
 
 import (
-	"godesde0/iteraciones"
+	"godesde0/ejercicios"
 )
 
 func main() {
@@ -24,14 +24,16 @@ func main() {
 	}*/
 
 	/*
-		num, text := ejercios.Mayor100("fff")
-		fmt.Println(num)
-		fmt.Println(text)
+			num, text := ejercios.Mayor100("fff")
+			fmt.Println(num)
+			fmt.Println(text)
 
+
+
+		//teclado.IngresoNumeros()
+
+		iteraciones.Iterarbreak()
+		iteraciones.Iterarcontinue()
 	*/
-
-	//teclado.IngresoNumeros()
-
-	iteraciones.Iterarbreak()
-	iteraciones.Iterarcontinue()
+	ejercicios.TablaMultiplicacion()
 }
