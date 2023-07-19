@@ -1,7 +1,7 @@
 package main
 
 import (
-	"godesde0/teclado"
+	"godesde0/iteraciones"
 )
 
 func main() {
@@ -30,5 +30,8 @@ func main() {
 
 	*/
 
-	teclado.IngresoNumeros()
+	//teclado.IngresoNumeros()
+
+	iteraciones.Iterarbreak()
+	iteraciones.Iterarcontinue()
 }
