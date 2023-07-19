@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
-	"runtime"
+	"godesde0/ejercios"
 )
 
 func main() {
 	/*estado, texto := variables.ConviertoATexto(1596)
 	fmt.Println(estado)
 	fmt.Println(texto)*/
-	if os := runtime.GOOS; os == "linux" || os == "OS X." {
+	/*if os := runtime.GOOS; os == "linux" || os == "OS X." {
 		fmt.Println("esto no es Win")
 	} else {
 		fmt.Println("esto es Win")
@@ -22,5 +22,9 @@ func main() {
 		fmt.Println("Esto es amd")
 	default:
 		fmt.Printf("%s \n", os)
-	}
+	}*/
+
+	num, text := ejercios.Mayor100("123")
+	fmt.Println(num)
+	fmt.Println(text)
 }
