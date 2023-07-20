@@ -1,7 +1,7 @@
 package main
 
 import (
-	"godesde0/funciones"
+	"godesde0/arreglos_slice"
 )
 
 func main() {
@@ -38,5 +38,5 @@ func main() {
 	//ejercicios.TablaMultiplicacion()
 	//files.LecturaArchivo()
 
-	funciones.Exponencia(10)
+	arreglos_slice.Capacidad()
 }
