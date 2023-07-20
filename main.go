@@ -1,8 +1,8 @@
 package main
 
 import (
+	"fmt"
 	"godesde0/goroutines"
-	"godesde0/teclado"
 )
 
 func main() {
@@ -51,8 +51,20 @@ func main() {
 
 	Maria := new(modelos.Mujer)
 	ejerc_interfaces.HumanoRespirando(Maria)
+	fmt.Println("Estoy aqui")
+	var x string
+	fmt.Scanln(&x)
 	*/
+	canal := make(chan bool)
+	canal2 := make(chan bool)
 
-	go goroutines.MiNombreLento("Galder")
-	teclado.IngresoNumeros()
+	go goroutines.MiNombreLento("Galder", canal)
+	go goroutines.MiNombreLento("Galder Nuñez", canal2)
+	fmt.Println("Estoy aqui")
+	defer func() {
+		<-canal
+		<-canal2
+
+	}()
+
 }
