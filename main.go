@@ -1,8 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"godesde0/goroutines"
+	"godesde0/webserver"
 )
 
 func main() {
@@ -55,16 +54,18 @@ func main() {
 	var x string
 	fmt.Scanln(&x)
 	*/
-	canal := make(chan bool)
-	canal2 := make(chan bool)
+	/*
+		canal := make(chan bool)
+		canal2 := make(chan bool)
 
-	go goroutines.MiNombreLento("Galder", canal)
-	go goroutines.MiNombreLento("Galder Nuñez", canal2)
-	fmt.Println("Estoy aqui")
-	defer func() {
-		<-canal
-		<-canal2
+		go goroutines.MiNombreLento("Galder", canal)
+		go goroutines.MiNombreLento("Galder Nuñez", canal2)
+		fmt.Println("Estoy aqui")
+		defer func() {
+			<-canal
+			<-canal2
 
-	}()
-
+		}()
+	*/
+	webserver.MiWebServer()
 }
