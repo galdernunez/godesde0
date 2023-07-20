@@ -1,7 +1,8 @@
 package main
 
 import (
-	"godesde0/defer_panic"
+	"godesde0/goroutines"
+	"godesde0/teclado"
 )
 
 func main() {
@@ -52,5 +53,6 @@ func main() {
 	ejerc_interfaces.HumanoRespirando(Maria)
 	*/
 
-	defer_panic.EjemploPanic()
+	go goroutines.MiNombreLento("Galder")
+	teclado.IngresoNumeros()
 }
