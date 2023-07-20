@@ -1,7 +1,7 @@
 package main
 
 import (
-	"godesde0/arreglos_slice"
+	"godesde0/maps"
 )
 
 func main() {
@@ -38,5 +38,6 @@ func main() {
 	//ejercicios.TablaMultiplicacion()
 	//files.LecturaArchivo()
 
-	arreglos_slice.Capacidad()
+	//arreglos_slice.Capacidad()
+	maps.MostrasMapas()
 }
