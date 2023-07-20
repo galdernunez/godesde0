@@ -1,8 +1,6 @@
 package main
 
-import (
-	"godesde0/maps"
-)
+import "godesde0/users"
 
 func main() {
 	/*estado, texto := variables.ConviertoATexto(1596)
@@ -39,5 +37,8 @@ func main() {
 	//files.LecturaArchivo()
 
 	//arreglos_slice.Capacidad()
-	maps.MostrasMapas()
+	//arreglos_slice.MuestroArreglos
+	//maps.MostrasMapas()
+
+	users.AltaUsuario()
 }
