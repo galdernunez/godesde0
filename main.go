@@ -1,7 +1,7 @@
 package main
 
 import (
-	"godesde0/files"
+	"godesde0/funciones"
 )
 
 func main() {
@@ -36,5 +36,7 @@ func main() {
 		iteraciones.Iterarcontinue()
 	*/
 	//ejercicios.TablaMultiplicacion()
-	files.LecturaArchivo()
+	//files.LecturaArchivo()
+
+	funciones.LlamarClosure()
 }
