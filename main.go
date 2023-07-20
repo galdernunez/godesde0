@@ -38,5 +38,5 @@ func main() {
 	//ejercicios.TablaMultiplicacion()
 	//files.LecturaArchivo()
 
-	funciones.LlamarClosure()
+	funciones.Exponencia(10)
 }
