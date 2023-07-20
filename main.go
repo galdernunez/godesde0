@@ -1,7 +1,7 @@
 package main
 
 import (
-	"godesde0/webserver"
+	"godesde0/middleware"
 )
 
 func main() {
@@ -67,5 +67,5 @@ func main() {
 
 		}()
 	*/
-	webserver.MiWebServer()
+	middleware.MiMiddleware()
 }
