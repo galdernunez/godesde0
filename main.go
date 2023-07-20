@@ -1,8 +1,7 @@
 package main
 
 import (
-	"godesde0/ejerc_interfaces"
-	"godesde0/modelos"
+	"godesde0/defer_panic"
 )
 
 func main() {
@@ -44,10 +43,14 @@ func main() {
 	//maps.MostrasMapas()
 
 	//users.AltaUsuario()
-	Pedro := new(modelos.Hombre)
+
+	/*Pedro := new(modelos.Hombre)
 
 	ejerc_interfaces.HumanoRespirando(Pedro)
 
 	Maria := new(modelos.Mujer)
 	ejerc_interfaces.HumanoRespirando(Maria)
+	*/
+
+	defer_panic.EjemploPanic()
 }
