@@ -1,6 +1,9 @@
 package main
 
-import "godesde0/users"
+import (
+	"godesde0/ejerc_interfaces"
+	"godesde0/modelos"
+)
 
 func main() {
 	/*estado, texto := variables.ConviertoATexto(1596)
@@ -40,5 +43,11 @@ func main() {
 	//arreglos_slice.MuestroArreglos
 	//maps.MostrasMapas()
 
-	users.AltaUsuario()
+	//users.AltaUsuario()
+	Pedro := new(modelos.Hombre)
+
+	ejerc_interfaces.HumanoRespirando(Pedro)
+
+	Maria := new(modelos.Mujer)
+	ejerc_interfaces.HumanoRespirando(Maria)
 }
